@@ -14,6 +14,13 @@
 			remoteGlobalIDString = 6E19459A193FD8AB00AE2BE0;
 			remoteInfo = StackLinkedList;
 		};
+		E05C16301942C82100A50B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E05C162C1942C82100A50B08 /* QueueLinkedList.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E05C16221942C82100A50B08;
+			remoteInfo = QueueLinkedList;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +39,7 @@
 		6E194583193FC8C300AE2BE0 /* DataStructuresAndAlgorithmsInSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresAndAlgorithmsInSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1945A4193FD8AB00AE2BE0 /* StackLinkedList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StackLinkedList.xcodeproj; path = StackLinkedList/StackLinkedList.xcodeproj; sourceTree = "<group>"; };
 		6E1945B21941976200AE2BE0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E05C162C1942C82100A50B08 /* QueueLinkedList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QueueLinkedList.xcodeproj; path = QueueLinkedList/QueueLinkedList.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				6E1945A4193FD8AB00AE2BE0 /* StackLinkedList.xcodeproj */,
+				E05C162C1942C82100A50B08 /* QueueLinkedList.xcodeproj */,
 			);
 			path = DataStructuresAndAlgorithmsInSwift;
 			sourceTree = "<group>";
@@ -74,6 +83,14 @@
 			isa = PBXGroup;
 			children = (
 				6E1945A9193FD8AB00AE2BE0 /* StackLinkedList */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E05C162D1942C82100A50B08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E05C16311942C82100A50B08 /* QueueLinkedList */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +141,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = E05C162D1942C82100A50B08 /* Products */;
+					ProjectRef = E05C162C1942C82100A50B08 /* QueueLinkedList.xcodeproj */;
+				},
+				{
 					ProductGroup = 6E1945A5193FD8AB00AE2BE0 /* Products */;
 					ProjectRef = 6E1945A4193FD8AB00AE2BE0 /* StackLinkedList.xcodeproj */;
 				},
@@ -141,6 +162,13 @@
 			fileType = "compiled.mach-o.executable";
 			path = StackLinkedList;
 			remoteRef = 6E1945A8193FD8AB00AE2BE0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E05C16311942C82100A50B08 /* QueueLinkedList */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = QueueLinkedList;
+			remoteRef = E05C16301942C82100A50B08 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -264,6 +292,7 @@
 				6E19458C193FC8C300AE2BE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
