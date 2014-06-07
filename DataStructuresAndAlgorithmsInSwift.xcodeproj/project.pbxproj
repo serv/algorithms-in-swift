@@ -40,6 +40,7 @@
 		6E1945A4193FD8AB00AE2BE0 /* StackLinkedList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StackLinkedList.xcodeproj; path = StackLinkedList/StackLinkedList.xcodeproj; sourceTree = "<group>"; };
 		6E1945B21941976200AE2BE0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E05C162C1942C82100A50B08 /* QueueLinkedList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QueueLinkedList.xcodeproj; path = QueueLinkedList/QueueLinkedList.xcodeproj; sourceTree = "<group>"; };
+		E05C16341942CC5200A50B08 /* DataStructuresAndAlgorithmsInSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructuresAndAlgorithmsInSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				6E1945B21941976200AE2BE0 /* .gitignore */,
 				6E194585193FC8C300AE2BE0 /* DataStructuresAndAlgorithmsInSwift */,
 				6E194584193FC8C300AE2BE0 /* Products */,
+				E05C16341942CC5200A50B08 /* DataStructuresAndAlgorithmsInSwift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,14 +264,21 @@
 		6E19458B193FC8C300AE2BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DataStructuresAndAlgorithmsInSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6E19458C193FC8C300AE2BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DataStructuresAndAlgorithmsInSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};

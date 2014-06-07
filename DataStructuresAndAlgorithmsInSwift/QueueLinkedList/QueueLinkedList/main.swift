@@ -8,5 +8,19 @@
 
 import Foundation
 
-println("Hello, World!")
+var queue = Queue()
+println(queue.count == 0)
 
+queue.enqueue(1)
+println(queue.count == 1)
+queue.enqueue(2)
+println(queue.count == 2)
+queue.enqueue(3)
+println(queue.count == 3)
+
+queue.dequeue()
+println(queue.count == 2)
+queue.dequeue()
+println(queue.count == 1)
+queue.dequeue()
+println(queue.count == 0)
